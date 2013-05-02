@@ -6,7 +6,7 @@ and open the template in the editor.
 <html>
     <head>
        
-<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta http-equiv="Content-Type" content="text" charset="iso-8859-1">
         <title>SAI</title>
          <link rel='stylesheet' href='../Recursos/css/estilos.css'/>
          <script type="text/javascript" language="javascript" src="../recursos/js/log.js"></script>
