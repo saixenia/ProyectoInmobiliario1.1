@@ -19,4 +19,5 @@ class mysqlcnx {
 		return $this->e[$col];
 	}
 }
+//nueva linea de codigo buuu
 ?>
