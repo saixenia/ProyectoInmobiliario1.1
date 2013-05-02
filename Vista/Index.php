@@ -24,6 +24,5 @@ and open the template in the editor.
             </form>
                 </div>
         </fieldset>
-      <label class="">loca</label>
     </body>
 </html>
