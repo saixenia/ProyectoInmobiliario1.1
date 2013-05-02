@@ -5,6 +5,7 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
+       
 <META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1"> 
         <title>SAI</title>
          <link rel='stylesheet' href='../Recursos/css/estilos.css'/>
@@ -23,6 +24,6 @@ and open the template in the editor.
             </form>
                 </div>
         </fieldset>
-            
+      <label class="">loca</label>
     </body>
 </html>
