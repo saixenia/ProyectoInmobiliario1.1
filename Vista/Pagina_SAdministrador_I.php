@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: text/html;charset=ISO-8859-1');  
 session_start();
 include_once '../Modelo/Clase_Persona.php';
 $r = new Persona();
@@ -41,9 +42,10 @@ and open the template in the editor.
             <div id="popupbox"></div>
             <div id="contenedor">
                 <?php
+                header('Content-Type: text/html;charset=ISO-8859-1');  
                 if ($_REQUEST != TRUE) {
                     echo '  
-            <h2>&#33Bienvenido a Xenia&#33</h2>
+            <h2>¡Bienvenido a Xenia&#33</h2>
             <p>
                 Este es un sistema de informaci&oacuten activo, el cual le va ayudar a mejorar su trabajo, ya que le va a facilitar la gesti&oacuten de su trabajo siguiendo la misi&oacuten de la empresa. 
             </p>
