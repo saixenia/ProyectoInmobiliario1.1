@@ -13,7 +13,6 @@ and open the template in the editor.
 <html>
     <head>
         <title>Super Administrador I</title>
-        <meta http-equiv="Content-Type" content="text" charset="ISO-8859-1"> 
         <link rel='stylesheet' href='../Recursos/css/estilos.css'/>
         <script type="text/javascript" language="javascript" src="../recursos/jquery/jquery.min.js" type="text/javascript"></script>
         <script type="text/javascript" language="javascript" src="../recursos/js/funciones_adm2.js"></script>
