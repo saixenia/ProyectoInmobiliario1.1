@@ -328,6 +328,14 @@ switch ($vccontrol) {
 
             break;
     }
+    case "12":{
+
+// Destruir todas las variables de sesión.
+$_SESSION = array();
+
+session_destroy();
+
+    }
         default : {
             break;
         }

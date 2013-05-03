@@ -397,5 +397,10 @@ $(document).ready(function(){ //cuando el html fue cargado iniciar
 
 })
 function salir(){
-    document.location = "../Vista/Index.php";
+    var url = "../Controlador/AdministradorI.php";
+    var ajax = new AjaxObj();
+    ajax.open("POST", url, false);
+    ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    ajax.send("boton="+"12");
+    //document.location = "../Vista/Index.php";
 }
