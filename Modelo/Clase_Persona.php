@@ -294,7 +294,10 @@ class Persona {
     }
 
     public function salir() {
-        
+         session_start();
+    $_SESSION = array();
+    session_destroy();
+    header('location:../Vista/Index.php');
     }
 
     public function cargarselect($tabla, $condi) {

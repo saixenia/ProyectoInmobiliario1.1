@@ -34,7 +34,7 @@ and open the template in the editor.
             <input type="button" value="Editar Inmueble" onclick="cargar('')"class="boton"/><br>
             <input type="button" value="Asesores" onclick="acciones_sadministradorI(4)"class="boton"/><br>
             <input type="button" value="Directores" onclick="acciones_sadministradorI(5)"class="boton"/><br>
-            <input type="button" value="Salir" onclick="salir()" class="boton"/>
+            <input type="submit" value="Salir"  onsubmit="salir(1)" class="boton"/>
         </div>
 <div id ="block"></div>
         <div class="container">
