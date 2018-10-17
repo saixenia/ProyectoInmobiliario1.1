@@ -1,5 +1,6 @@
 <?php
-header("Content-Type: text/html;charset=ISO-8859-1");  
+header('Content-Type: text/html;charset=ISO-8859-1');  
+
 require 'Clase_Gerente.php';
 include_once 'Clase_Conexion.php';
 

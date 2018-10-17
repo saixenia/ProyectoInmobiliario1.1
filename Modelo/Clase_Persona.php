@@ -1,5 +1,5 @@
 <?php
-header("Content-Type: text/html;charset=ISO-8859-1");  
+header('Content-Type: text/html;charset=ISO-8859-1');  
 require("Clase_Conexion.php");
 
 class Persona {
@@ -294,7 +294,10 @@ class Persona {
     }
 
     public function salir() {
-        
+         session_start();
+    $_SESSION = array();
+    session_destroy();
+    header('location:../Vista/Index.php');
     }
 
     public function cargarselect($tabla, $condi) {

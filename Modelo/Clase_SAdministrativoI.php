@@ -1,5 +1,5 @@
 <?php
-header("Content-Type: text/html;charset=ISO-8859-1");  
+header('Content-Type: text/html;charset=ISO-8859-1');  
 require_once 'Clase_SAdministradorII.php';
 
 class SAdministrativoI extends SAdministradorII {

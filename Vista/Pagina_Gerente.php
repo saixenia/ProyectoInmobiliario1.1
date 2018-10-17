@@ -1,5 +1,5 @@
 <?php
-header("Content-Type: text/html;charset=ISO-8859-1");  
+header('Content-Type: text/html;charset=ISO-8859-1');  
 //session_start();
 //include_once '../Modelo/Clase_Persona.php';
 //$r=new Persona();
@@ -11,7 +11,7 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta http-equiv="Content-Type" content="text" charset=ISO-8859-1">
         <title>Gerencia</title>
         <link rel='stylesheet' href='../recursos/css/estilos.css'/>
         <script src="../recursos/jquery/jquery.min.js" type="text/javascript"></script>

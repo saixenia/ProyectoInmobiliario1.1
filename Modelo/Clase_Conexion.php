@@ -1,5 +1,5 @@
 <?
-header("Content-Type: text/html;charset=ISO-8859-1");  
+header('Content-Type: text/html;charset=ISO-8859-1');  
 /*este es la manera orientada a objetos*/
 class mysqlcnx {
 	var $f;//es la conexion
@@ -19,4 +19,5 @@ class mysqlcnx {
 		return $this->e[$col];
 	}
 }
+//nueva linea de codigo buuu
 ?>

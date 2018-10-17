@@ -191,15 +191,15 @@ function crear_inmueble(){
     var cmetrocuadrado = this.valida_campo("cm", txt_cmetrocuadrado.value);
     var direccion = "";//para dir
     if (this.valida_campo("dir", txt_direccion_a.value)==false){
-        alert("Es requerida la Direccion completa");
+        alert("Es requerida la Direcci\u00f3n completa");
         direccion = "";
     }else{
         if (this.valida_campo("dir", txt_direccion_c.value)==false){
-            alert("Es requerida la Direccion completa");
+            alert("Es requerida la Direcci\u00f3n completa");
             direccion = "";
         }else{
             if (this.valida_campo("dir", txt_direccion_e.value)==false){
-                alert("Es requerida la Direccion completa");
+                alert("Es requerida la Direcci\u00f3n completa");
                 direccion = "";
             }else{
                 direccion ='"' + sltidir.value + " " + txt_direccion_a.value + " " + txt_direccion_b.value + " " + txt_direccion_c.value + " " + txt_direccion_d.value + " " + txt_direccion_e.value + '"';
@@ -207,7 +207,7 @@ function crear_inmueble(){
         }
     }
     if((acontruida == false) || (precio == false) || (habitaciones == false) || (banos == false)  || (tconstruido == false) || (pisos == false)  || (tvista == false) || (npropietario == false)|| (tpropietario == false) || (cmetrocuadrado == false) || (direccion == "")){
-        jAlert("Error al Guardar,hace falta informacion (Requerido)");
+        jAlert("Error al Guardar,hace falta informaci\u00f3n (Requerido)");
     }else{
         var script = "(" + tipo + ", "+ proceso +", "+asesor+", "+barrio+", "+localidad+", '"+codigo+"', '"+npropietario+"', '"+tpropietario+"', "+publicidad+", '"+cvivareal+"', '"+cfincaraiz+"', '"+cmetrocuadrado+"', "+ascensor+", "+banos+", "+habitaciones+", "+direccion+", "+pisos+", '"+acontruida+"', "+garajes+", '"+arealote+"', "+estrato+", "+administracion+", "+precio+", "+acontruida+", '"+tvista+"', '"+urbanizacion+"', '"+observaciones+"')";
         var url = "../Controlador/AdministradorI.php";
@@ -396,6 +396,11 @@ $(document).ready(function(){ //cuando el html fue cargado iniciar
     })
 
 })
-function salir(){
-    document.location = "../Vista/Index.php";
+function salir(parametro){
+    var url = "../Controlador/Salida.php";
+    var ajax = new AjaxObj();
+    ajax.open("POST", url, false);
+    ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    ajax.send("salida="+parametro);
+//    document.location = "../Vista/Index.php";
 }

@@ -1,5 +1,5 @@
 <?php
-header("Content-Type: text/html;charset=ISO-8859-1");  
+header('Content-Type: text/html;charset=ISO-8859-1');  
 session_start();
 include_once '../Modelo/Clase_Persona.php';
 $r = new Persona();
@@ -12,7 +12,6 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <META HTTP-EQUIV="Content-Type" charset="ISO-8859-1"> 
         <title>Super Administrador I</title>
         <link rel='stylesheet' href='../Recursos/css/estilos.css'/>
         <script type="text/javascript" language="javascript" src="../recursos/jquery/jquery.min.js" type="text/javascript"></script>
@@ -35,7 +34,7 @@ and open the template in the editor.
             <input type="button" value="Editar Inmueble" onclick="cargar('')"class="boton"/><br>
             <input type="button" value="Asesores" onclick="acciones_sadministradorI(4)"class="boton"/><br>
             <input type="button" value="Directores" onclick="acciones_sadministradorI(5)"class="boton"/><br>
-            <input type="button" value="Salir" onclick="salir()" class="boton"/>
+            <input type="submit" value="Salir"  onsubmit="salir(1)" class="boton"/>
         </div>
 <div id ="block"></div>
         <div class="container">
@@ -43,9 +42,10 @@ and open the template in the editor.
             <div id="popupbox"></div>
             <div id="contenedor">
                 <?php
+                header('Content-Type: text/html;charset=ISO-8859-1');  
                 if ($_REQUEST != TRUE) {
                     echo '  
-            <h2>&#33Bienvenido a Xenia&#33</h2>
+            <h2>¡Bienvenido a Xenia&#33</h2>
             <p>
                 Este es un sistema de informaci&oacuten activo, el cual le va ayudar a mejorar su trabajo, ya que le va a facilitar la gesti&oacuten de su trabajo siguiendo la misi&oacuten de la empresa. 
             </p>
@@ -63,7 +63,7 @@ and open the template in the editor.
             </p>
 
             <p>
-                - Asesor Ã±Ã±Ã±Ã±Ã±OÃ³
+                - Asesor ñññññOó
             </p>
             <p>
                 - Proceso Inmueble
